@@ -6,16 +6,17 @@ module.exports = {
       sm: "1rem",
       base: "1.125rem",
       lg: "1.25rem",
-      "xl": "1.5rem",
+      xl: "1.5rem",
       "2xl": "1.875rem",
       "3xl": "2.25rem",
       "4xl": "3rem",
       "5xl": "4rem",
       "6xl": "5rem",
     },
-    backdropFilter: { // defaults to {}
-      'none': 'none',
-      'blur': 'blur(20px)',
+    backdropFilter: {
+      // defaults to {}
+      none: "none",
+      blur: "blur(20px)",
     },
     screens: {
       "2xs": "375px",
@@ -34,6 +35,18 @@ module.exports = {
     },
     extend: {
       colors: {
+        pink: {
+          50: "#FDF3F9",
+          100: "#FCE8F3",
+          200: "#F7C4E0",
+          300: "#F3A1CD",
+          400: "#E95BA8",
+          500: "#E01482",
+          600: "#CA1275",
+          700: "#860C4E",
+          800: "#65093B",
+          900: "#430627",
+        },
         gray: {
           "100": "#f5f5f5",
           "200": "#eeeeee",
@@ -47,12 +60,12 @@ module.exports = {
         },
       },
       borderRadius: {
-        'xl': '0.75rem',
-        '2xl': '1rem',
-        '3xl': '1.25rem',
+        xl: "0.75rem",
+        "2xl": "1rem",
+        "3xl": "1.25rem",
       },
       backgroundOpacity: {
-        '90': '0.9'
+        "90": "0.9",
       },
       screens: {
         "2xl": "1530px",
@@ -75,11 +88,11 @@ module.exports = {
         ...theme("spacing"),
         ...negative(theme("spacing")),
       }),
-      maxWidth: (theme) => ({
+      maxWidth: theme => ({
         ...theme("spacing"),
         ...theme("screens"),
       }),
-      minHeight: (theme) => ({
+      minHeight: theme => ({
         ...theme("spacing"),
         "25": "25vh",
         "50": "50vh",
@@ -88,12 +101,12 @@ module.exports = {
     },
   },
   variants: {
-    backgroundColor: ['responsive', 'hover', 'group-hover'],
-    borderColor: ['responsive', 'hover', 'group-hover'],
-    scale: ['responsive', 'hover', 'group-hover'],
-    boxShadow: ['responsive', 'hover', 'group-hover']
+    backgroundColor: ["responsive", "hover", "group-hover"],
+    borderColor: ["responsive", "hover", "group-hover"],
+    scale: ["responsive", "hover", "group-hover"],
+    boxShadow: ["responsive", "hover", "group-hover"],
   },
   corePlugins: {
     container: false,
   },
-};
+}
