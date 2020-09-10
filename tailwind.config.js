@@ -29,7 +29,8 @@ module.exports = {
       "4xl": "1900px",
     },
     fontFamily: {
-      sans: ["Poppins", "sans-serif"],
+      sans: ["Source Sans Pro", "sans-serif"],
+      slab: ["Zilla Slab", "serif"],
     },
     extend: {
       colors: {
