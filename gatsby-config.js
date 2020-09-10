@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby x Tailwind x Framer Motion`,
-    description: `An opinionated starter for Gatsby v2 with TailwindCSS, PostCSS and Framer Motion page transitions.`,
-    author: `@samuelgoddard`,
+    title: `Birmingham Parents' Support Group`,
+    description: `BPSG was founded in 1997. We are dedicated to helping families of lesbian, gay and bisexual people in coming to terms with knowing that a member of their family is gay.`,
+    author: `@zellement`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

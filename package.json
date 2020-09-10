@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-tailwind-motion",
+  "name": "bpsg",
   "private": false,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Birmingham Parents' Support Group",
   "version": "0.1.0",
-  "author": "Sam Goddard <hello@samgoddard.co.uk>",
+  "author": "Dan Farrow [dan@zellement.com]",
   "dependencies": {
     "framer-motion": "^1.8.4",
     "gatsby": "^2.19.12",
@@ -27,7 +27,7 @@
     "postcss-nested": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.19.1",
-    "tailwindcss": "^1.4.1"
+    "tailwindcss": "^1.8.3"
   },
   "keywords": [
     "gatsby",
@@ -45,6 +45,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/samuelgoddard/gatsby-tailwind-motion"
+    "url": "https://github.com/Zellement/bpsg"
   }
 }
