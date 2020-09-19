@@ -1,0 +1,98 @@
+backend:
+  name: git-gateway
+  
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    description: >
+      These are all the standard pages of the website.
+    editor:
+      preview: false
+    files:
+      - file: "src/pages/about.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "standard-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Main Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/oddfellows-hall.md"
+        label: "Oddfellows Hall"
+        name: "oddfellows-hall"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "standard-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Main Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/gigs.md"
+        label: "Gigs"
+        name: "gigs"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "gigs-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Main Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/guestbook.md"
+        label: "Guestbook"
+        name: "guestbook"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "guestbook-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Main Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/discography.md"
+        label: "Discography"
+        name: "discography"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "discography-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Main Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/gallery.md"
+        label: "Gallery"
+        name: "gallery"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "standard-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Main Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
