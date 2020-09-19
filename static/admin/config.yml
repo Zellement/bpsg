@@ -12,9 +12,9 @@ collections:
     editor:
       preview: false
     files:
-      - file: "src/pages/about.md"
-        label: "About"
-        name: "about"
+      - file: "src/pages/accepting.md"
+        label: "Accepting"
+        name: "accepting"
         fields:
           - {
               label: "Template Key",
@@ -26,9 +26,9 @@ collections:
           - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/oddfellows-hall.md"
-        label: "Oddfellows Hall"
-        name: "oddfellows-hall"
+      - file: "src/pages/accepting/i-think-my-son-daughter-is-gay.md"
+        label: "I Think My Son / Daughter is Gay"
+        name: "i-think-my-son-daughter-is-gay"
         fields:
           - {
               label: "Template Key",
@@ -40,51 +40,51 @@ collections:
           - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/gigs.md"
-        label: "Gigs"
-        name: "gigs"
+      - file: "src/pages/accepting/my-son-daugher-has-just-come-out.md"
+        label: "My Son / Daugher Has Just Come Out"
+        name: "my-son-daugher-has-just-come-out"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "gigs-page",
+              default: "standard-page",
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/guestbook.md"
-        label: "Guestbook"
-        name: "guestbook"
+      - file: "src/pages/stories"
+        label: "Stories"
+        name: "stories"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "guestbook-page",
+              default: "standard-page",
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/discography.md"
-        label: "Discography"
-        name: "discography"
+      - file: "src/pages/meetings"
+        label: "Meetings"
+        name: "meetings"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "discography-page",
+              default: "standard-page",
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/gallery.md"
-        label: "Gallery"
-        name: "gallery"
+      - file: "src/pages/links"
+        label: "Links"
+        name: "links"
         fields:
           - {
               label: "Template Key",
