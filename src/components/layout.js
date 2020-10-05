@@ -41,7 +41,7 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <AnimatePresence>
         <motion.main
           key={location.pathname}

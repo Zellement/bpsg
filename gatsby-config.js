@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Birmingham Parents' Support Group`,
     description: `BPSG was founded in 1997. We are dedicated to helping families of lesbian, gay and bisexual people in coming to terms with knowing that a member of their family is gay.`,
-    author: `@zellement`,
+    author: `@Zellement`,
+    email: `birminghamparentssupportgroup@gmail.com`,
+    telephone: '(0121) 711 8166'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
