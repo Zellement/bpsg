@@ -23,7 +23,7 @@ const Header = () => (
       </div>
     </div>
 
-    <div className="container p-4">
+    <div className="container flex-row p-4 md:flex">
       <div className="flex flex-wrap items-center mb-4">
         <Link
           className="block inline-block text-lg font-bold md:text-xl"
