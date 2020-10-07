@@ -93,7 +93,12 @@ Navigation
 
 .navigation-wrapper__link  {
   @apply
-  	block px-1 py-1 text-lg font-bold text-gray-600 lowercase border-b-2 border-white;
+  	block px-2 py-1 text-lg font-bold text-gray-600 lowercase border-l-2 border-white;
+
+	  @screen md {
+		@apply
+			border-b-2 border-l-0;
+	  }
 
 	  @screen lg {
 		@apply
@@ -112,4 +117,35 @@ Navigation
 
 .navigation-wrapper__link.is-active {
 	@apply border-pink-500;
+}
+
+.subnav {
+	@apply pl-4 ml-3 text-sm;
+	li {
+		@apply my-1;
+	}
+	a {
+		@apply block p-1 border-l-2 border-gray-200;
+		&:hover {
+		  @apply text-gray-800 border-gray-500;
+		}
+	}
+
+	@screen md {
+		@apply absolute z-10 hidden p-0 transform -translate-x-1/2 bg-white shadow-lg top-full left-1/2 w-96;
+		a {
+			@apply px-4 py-3;
+		}
+	}
+}
+
+.has-children {
+	@apply relative;
+	&:hover > .subnav {
+		@apply block;
+	}
+	&:focus-within > .subnav {
+		@apply
+			block opacity-100;
+	}
 }
