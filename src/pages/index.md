@@ -5,7 +5,7 @@ image: /img/rectangle-5.jpg
 ---
 ## Welcome to
 
-# Birmingham Parent's Support Group
+## Birmingham Parent's Support Group
 
 When discovering that a member of your family or a friend is gay, lesbian or bisexual it is often very distressing. It can be difficult to understand exactly what this means and how or why it affects you.\
 \
