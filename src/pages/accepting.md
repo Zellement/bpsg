@@ -5,9 +5,11 @@ image: /img/priscilla-du-preez-nf8xhlmmg0c-unsplash.jpg
 ---
 # Accepting
 
-There is one thing that you  must remember - it's not the end of the world. In fact it's the beginning.
+There is one thing that you must remember - **it's not the end of the world**.
 
-Discovering that a member of your family is gay, lesbian or bisexual is often very distressing,  since it can be difficult to understand exactly what this means and how or why it affects you.
+In fact, it's the beginning.
+
+Discovering that a member of your family is gay, lesbian or bisexual is often very distressing, since it can be difficult to understand exactly what this means and how or why it affects you.
 
 The most important thing to remember is that however you may feel in these circumstances, you are not alone. Since we are all parents in similar circumstances, we have been through the emotions that you may be going through and asked the same questions as those you may be asking.
 
