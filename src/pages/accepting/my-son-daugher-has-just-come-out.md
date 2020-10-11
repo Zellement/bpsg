@@ -2,6 +2,8 @@
 title: My <span>son / daughter</span> has just "come out"
 image: /img/priscilla-du-preez-9vhpckymsh0-unsplash.jpg
 ---
+# My Son / Daugher Has Just Come Out
+
 Everybody's experiences differ as people come from all sorts of backgrounds in different shapes and sizes, and the way sexuality is dealt with varies. So writing this article to suit all readers is difficult.
 
 The most important thing to remember is that your son / daughter has not changed. Some parents see it as having an alien in the house.
