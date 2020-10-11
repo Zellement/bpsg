@@ -8,7 +8,7 @@ import Nav from "../components/nav"
 import Logo from "../components/logo"
 
 const Header = () => (
-  <header className="py-8 text-gray-600 md:py-16">
+  <header className="text-gray-600 md:pt-16">
     <div className="absolute top-0 left-0 right-0 hidden w-full bg-gray-100 md:block">
       <div className="container flex flex-row justify-end p-4 space-x-4 lg:space-x-8 xl:space-x-12">
         <p className="font-bold">

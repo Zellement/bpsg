@@ -1,13 +1,15 @@
 import React from "react"
 import SEO from "../components/seo"
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion"
+import { HTMLContent } from "../components/content"
+import Img from "gatsby-image"
 
 const duration = 0.35
 
 const container = {
   visible: {
     transition: {
-      when: 'beforeChildren',
+      when: "beforeChildren",
       staggerChildren: 0.2,
       delayChildren: duration,
     },
@@ -21,46 +23,55 @@ const item = {
   },
 }
 
-const IndexPage = () => {
+const StandardPage = ({ data }) => {
+  const post = data.markdownRemark
+
   return (
     <>
       <SEO title="Home" />
       <motion.section
         variants={container}
-        initial="hidden" 
+        initial="hidden"
         animate="visible"
         className="container"
       >
-        <motion.div 
-          className="content"
-          variants={item}
-          transition="easeInOut"
-        >
-          <p className="text-lg md:text-xl pl-3 border-l-2 border-black">An opinionated starter for Gatsby v2 with TailwindCSS, PostCSS and Framer Motion page transitions.</p>
-        </motion.div>
-
-        <motion.div 
-          className="content"
-          variants={item}
-          transition="easeInOut"
-        >
-          <hr className="block my-8" />
-        </motion.div>
-
-        <motion.div 
-          className="content"
-          variants={item}
-          transition="easeInOut"
-        >
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          <h2>Lorem ipsum dolor sit amet</h2>
+        <motion.div className="p-4" variants={item} transition="easeInOut">
           
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p className="m-0 text-gray-500 lowercase font-slab">Birmingham Parents Support Sroup</p>
+          <HTMLContent className="text-2xl font-bold leading-tight text-black lowercase font-slab hero-primary" content={post.frontmatter.title} />
+          
+          <Img className="mt-8" fluid={post.frontmatter.image.childImageSharp.fluid} />
+
+        </motion.div>
+
+        <motion.div
+          className="p-8 content"
+          variants={item}
+          transition="easeInOut"
+        >
+          <HTMLContent content={post.html} />
         </motion.div>
       </motion.section>
     </>
   )
 }
 
-export default IndexPage
+export default StandardPage
+
+export const StandardPageQuery = graphql`
+  query StandardPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1000, maxHeight: 330) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`

@@ -33,6 +33,7 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `@wardpeet/gatsby-image-nextgen`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,

@@ -15,3 +15,7 @@
 
 /* Tailwind Utils */
 @import 'tailwindcss/utilities';
+
+.hero-primary span {
+  @apply text-pink-500;
+}

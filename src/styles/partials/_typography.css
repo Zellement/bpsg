@@ -1,5 +1,5 @@
 body {
-  @apply font-sans antialiased;
+  @apply font-sans text-base antialiased;
 }
 
 /* Headings */
@@ -40,5 +40,9 @@ h2 {
   /* Headings following paragraphs */
   p + h1, p + h2, p + h3, p + h4 {
     @apply block pt-6;
+  }
+  
+  ul {
+    @apply my-6;
   }
 }
