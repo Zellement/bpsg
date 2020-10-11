@@ -1,5 +1,5 @@
 ---
-title: My Son / Daughter Has Just "Come Out"
+title: My <span>son / daughter</span> has just "come out"
 image: /img/priscilla-du-preez-9vhpckymsh0-unsplash.jpg
 ---
 Everybody's experiences differ as people come from all sorts of backgrounds in different shapes and sizes, and the way sexuality is dealt with varies. So writing this article to suit all readers is difficult.
