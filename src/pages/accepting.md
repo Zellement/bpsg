@@ -16,9 +16,8 @@ However difficult we may find it, we must break free from the common misundersta
 
 Please click on the link which is most appropriate to your situation:
 
-I Think my Son / Daughter is Gay
-
-My Son / Daughter Has Just 'Come Out'
+* [I Think my Son / Daughter is Gay](https://www.birminghamparentssupport.com/i-think-my-son-daughter-is-gay)
+* [My Son / Daughter Has Just 'Come Out'](https://www.birminghamparentssupport.com/my-son-daughter-has-just-come-out)
 
 ## Parents' Views
 
