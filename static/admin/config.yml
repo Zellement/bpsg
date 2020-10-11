@@ -12,6 +12,19 @@ collections:
     editor:
       preview: false
     files:
+      - file: "src/pages/index.md"
+        label: "Home"
+        name: "home"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Main Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/accepting.md"
         label: "Accepting"
         name: "accepting"
