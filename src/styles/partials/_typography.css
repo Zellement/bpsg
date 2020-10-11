@@ -45,4 +45,12 @@ h2 {
   ul {
     @apply my-6;
   }
+  ul li {
+    background-image: url("../images/angle-right.svg");
+    background-size: 12px 12px;
+    @apply pl-4 font-bold bg-left bg-no-repeat;
+    &:hover {
+      @apply text-pink-500;
+    }
+  }
 }
