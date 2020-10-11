@@ -1,5 +1,5 @@
 ---
-title: Accepting
+title: <span>Accepting</span> your son or daughter is gay
 image: /img/priscilla-du-preez-nf8xhlmmg0c-unsplash.jpg
 ---
 # Accepting
