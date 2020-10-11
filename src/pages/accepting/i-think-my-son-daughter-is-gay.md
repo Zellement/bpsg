@@ -1,7 +1,7 @@
 ---
 title: I Think My Son / Daughter Is Gay
 subtitle: Tets
-image: /img/donovan-grabowski-m1aslr8g51g-unsplash.jpg
+image: /img/umit-bulut-qbtc7zwjb64-unsplash.jpg
 ---
 Try not to make your son / daughter angry, i.e. don't go searching for clues in their bedroom, as this aggravates the situation. Respect their privacy. They will 'come out' when they are ready. You can help them to 'come out' by asking, but if they're not gay you may offend them. At the same time try not to make them feel you are putting them on the spot. Try not to make him/her feel awkward. Don't be upset that they haven't told you themselves.
 
