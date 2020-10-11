@@ -27,7 +27,7 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/accepting/i-think-my-son-daughter-is-gay.md"
+      - file: "src/pages/i-think-my-son-daughter-is-gay.md"
         label: "I Think My Son / Daughter is Gay"
         name: "i-think-my-son-daughter-is-gay"
         fields:
@@ -35,7 +35,7 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/accepting/my-son-daugher-has-just-come-out.md"
+      - file: "src/pages/my-son-daugher-has-just-come-out.md"
         label: "My Son / Daugher Has Just Come Out"
         name: "my-son-daugher-has-just-come-out"
         fields:

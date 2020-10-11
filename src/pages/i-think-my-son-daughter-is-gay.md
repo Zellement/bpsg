@@ -1,4 +1,5 @@
 ---
+templateKey: standard-page
 title: I think my <span>son / daughter</span> is gay
 subtitle: Tets
 image: /img/umit-bulut-qbtc7zwjb64-unsplash.jpg

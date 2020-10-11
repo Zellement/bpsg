@@ -1,4 +1,5 @@
 ---
+templateKey: index
 title: Supporting <span>families</span> and their <span>LGBT+</span> loved ones
   since 1997
 image: /img/rectangle-5.jpg
