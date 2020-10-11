@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  
+
 media_folder: static/img
 public_folder: /img
 
@@ -16,25 +16,14 @@ collections:
         label: "Home"
         name: "home"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "index",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/accepting.md"
         label: "Accepting"
         name: "accepting"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "standard-page",
-            }
+        fields: - { label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -42,12 +31,7 @@ collections:
         label: "I Think My Son / Daughter is Gay"
         name: "i-think-my-son-daughter-is-gay"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "standard-page",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -55,12 +39,7 @@ collections:
         label: "My Son / Daugher Has Just Come Out"
         name: "my-son-daugher-has-just-come-out"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "standard-page",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -68,12 +47,7 @@ collections:
         label: "Stories"
         name: "stories"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "standard-page",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -81,12 +55,7 @@ collections:
         label: "Meetings"
         name: "meetings"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "standard-page",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -94,12 +63,7 @@ collections:
         label: "Links"
         name: "links"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "standard-page",
-            }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }

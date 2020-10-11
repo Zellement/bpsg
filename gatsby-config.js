@@ -9,16 +9,31 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/img`,
+        name: 'uploads',
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-netlify-cms`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -31,5 +46,6 @@ module.exports = {
         icon: `src/images/favicon.png`,
       },
     },
+    `gatsby-plugin-netlify-cms`,
   ],
 }
