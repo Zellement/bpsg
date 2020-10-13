@@ -13,7 +13,7 @@ Discovering that a member of your family is gay, lesbian or bisexual is often ve
 
 The most important thing to remember is that however you may feel in these circumstances, you are not alone. Since we are all parents in similar circumstances, we have been through the emotions that you may be going through and asked the same questions as those you may be asking.
 
-We are here to listen and talk over the telephone and we hold informal monthly meetings in a friendly, relaxed atmosphere where we can lend a friendly ear and talk together about how we feel.
+> We are here to listen and talk over the telephone and we hold informal monthly meetings in a friendly, relaxed atmosphere where we can lend a friendly ear and talk together about how we feel.
 
 However difficult we may find it, we must break free from the common misunderstandings and fears that make it more difficult to accept homosexuality. Ignorance and prejudice in society affect our gay and lesbian children at every turn, so we should try to understand who they are and give them the acceptance and support that they deserve.
 
