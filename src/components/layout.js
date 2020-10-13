@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import { motion, AnimatePresence } from 'framer-motion'
 
 import Header from "./header"
+import Footer from "./footer"
 import "../styles/main.css"
 
 const duration = 0.35
@@ -53,6 +54,7 @@ const Layout = ({ children, location }) => {
         {children}
         </motion.main>
       </AnimatePresence>
+      <Footer />
     </>
   )
 }
