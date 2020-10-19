@@ -1,6 +1,9 @@
 import React from "react"
+import { graphql } from 'gatsby'
 import SEO from "../components/seo"
 import { motion } from 'framer-motion'
+import { HTMLContent } from "../components/content"
+import Img from "gatsby-image"
 
 const duration = 0.35
 
@@ -21,7 +24,8 @@ const item = {
   },
 }
 
-const IndexPage = () => {
+const IndexPage = ( {data} ) => {
+  const post = data.markdownRemark
   return (
     <>
       <SEO title="Home" />
@@ -32,11 +36,20 @@ const IndexPage = () => {
         className="container"
       >
         <motion.div 
-          className="content"
+          className="container flex flex-col md:flex-row"
           variants={item}
           transition="easeInOut"
         >
-          <p className="text-lg md:text-xl pl-3 border-l-2 border-black">An opinionated starter for Gatsby v2 with TailwindCSS, PostCSS and Framer Motion page transitions.</p>
+
+          <div className="flex flex-col justify-center p-4 md:w-5/12">
+            <p className="m-0 text-gray-500 lowercase font-slab">Birmingham Parents Support Group</p>
+            <HTMLContent className="text-2xl font-bold leading-tight text-black lowercase font-slab hero-primary lg:text-3xl" content={post.frontmatter.title} />
+          </div>
+          
+          <div className="flex flex-col w-full h-40 mb-8 lg:h-auto sm:h-56 md:h-64 md:w-7/12 md:mb-0">
+            <Img className="w-full h-full object-fit" fluid={post.frontmatter.image.childImageSharp.fluid} />
+          </div>
+
         </motion.div>
 
         <motion.div 
@@ -64,3 +77,21 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const IndexQuery = graphql`
+  query IndexPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        title
+        image {
+          childImageSharp {
+            fluid(quality: 90, maxHeight: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
