@@ -100,6 +100,9 @@ module.exports = {
       }),
     },
   },
+  purge: [
+    './src/**/*.js',
+  ],
   variants: {
     backgroundColor: ["responsive", "hover", "group-hover"],
     borderColor: ["responsive", "hover", "group-hover"],
