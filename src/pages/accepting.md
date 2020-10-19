@@ -11,6 +11,8 @@ In fact, it's the beginning.
 
 Discovering that a member of your family is gay, lesbian or bisexual is often very distressing, since it can be difficult to understand exactly what this means and how or why it affects you.
 
+![Friends in a field](/img/antonino-visalli-rnibly7ahck-unsplash.jpg "Friends in a field")
+
 The most important thing to remember is that however you may feel in these circumstances, you are not alone. Since we are all parents in similar circumstances, we have been through the emotions that you may be going through and asked the same questions as those you may be asking.
 
 > We are here to listen and talk over the telephone and we hold informal monthly meetings in a friendly, relaxed atmosphere where we can lend a friendly ear and talk together about how we feel.
