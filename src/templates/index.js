@@ -36,17 +36,17 @@ const IndexPage = ( {data} ) => {
         className="container"
       >
         <motion.div 
-          className="container flex flex-col md:flex-row"
+          className="container flex flex-col p-4 md:flex-row"
           variants={item}
           transition="easeInOut"
         >
 
-          <div className="flex flex-col justify-center p-4 md:w-5/12">
+          <div className="flex flex-col justify-center md:w-5/12">
             <p className="m-0 text-gray-500 lowercase font-slab">Birmingham Parents Support Group</p>
             <HTMLContent className="text-2xl font-bold leading-tight text-black lowercase font-slab hero-primary lg:text-3xl" content={post.frontmatter.title} />
           </div>
           
-          <div className="flex flex-col w-full h-40 mb-8 lg:h-auto sm:h-56 md:h-64 md:w-7/12 md:mb-0">
+          <div className="flex flex-col w-full h-40 mb-8 box-after--pink-500 box-after--pink-500--4 lg:h-auto sm:h-56 md:h-64 md:w-7/12 md:mb-0">
             <Img className="w-full h-full object-fit" fluid={post.frontmatter.image.childImageSharp.fluid} />
           </div>
 
