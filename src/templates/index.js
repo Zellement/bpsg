@@ -52,24 +52,17 @@ const IndexPage = ( {data} ) => {
 
         </motion.div>
 
-        <motion.div 
-          className="content"
+        <motion.div
+          className="items-stretch p-4 lg:flex lg:flex-row"
           variants={item}
           transition="easeInOut"
         >
-          <hr className="block my-8" />
-        </motion.div>
-
-        <motion.div 
-          className="content"
-          variants={item}
-          transition="easeInOut"
-        >
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          <h2>Lorem ipsum dolor sit amet</h2>
           
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div className="flex flex-col w-full h-40 mb-8 lg:h-auto sm:h-56 md:h-64 lg:w-7/12 lg:mb-0">
+            <Img className="w-full h-full object-fit" fluid={post.frontmatter.image.childImageSharp.fluid} />
+          </div>
+
+          <HTMLContent className="z-10 bg-white lg:p-16 lg:shadow-lg content lg:w-7/12 lg:-ml-8 lg:mt-16 lg:mb-16 lg:h-auto" content={post.html} />
         </motion.div>
       </motion.section>
     </>

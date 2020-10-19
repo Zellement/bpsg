@@ -19,6 +19,7 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
+          - { label: "Body Image", name: "bodyimage", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/accepting.md"
         label: "Accepting"
