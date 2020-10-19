@@ -14,7 +14,7 @@ const Address = ({ className }) => {
   `)
   return (
     <>
-      <Img className={className + " h-10 w-48"} fluid={data.imageSharp.fixed} />
+      <Img className={className + " h-10 w-48"} fixed={data.imageSharp.fixed} />
     </>
   )
 }
