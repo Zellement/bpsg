@@ -11,6 +11,8 @@ Everybody's experiences differ as people come from all sorts of backgrounds in d
 
 Now your child has come out it does not automatically mean that he will adopt a limp wrist or she will become butch. Something you must not do is over-react and to think it's all your fault. That is completely untrue. It is not the way you brought your child up that has made them gay.
 
+![2 women playing a game](/img/elevate-xtianzgte50-unsplash.jpg "2 women playing a game")
+
 The worst thing you can do is pretend nothing has happened, brush it under the carpet and hope it will all go away. Don't say "It's just a phase". Your child may know otherwise and might be irritated by you saying this, especially when they've known for some time.
 
 Hanging on to the hope that your child will change his / her mind will not work. They cant 'change' their mind.
