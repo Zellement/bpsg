@@ -13,4 +13,4 @@ Try not to make your son / daughter angry, i.e. don't go searching for clues in 
 
 Asking your son / daughter if they are gay may help them, because they may not know how to tell you. They should realise that it probably won't be much of a shock for you if they know that you already have your suspicions.
 
-If or when you find your child is gay, click here for more help.
+If or when you find your child is gay, contact us for help.
