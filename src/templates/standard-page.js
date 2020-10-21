@@ -49,7 +49,8 @@ const StandardPage = ({ data }) => {
           transition="easeInOut"
         >
           
-          <div className="flex flex-col w-full h-40 mb-8 lg:h-auto sm:h-56 md:h-64 lg:w-7/12 lg:mb-0">
+          <div className="relative flex flex-col w-full h-40 mb-8 lg:h-auto sm:h-56 md:h-64 lg:w-7/12 lg:mb-0">
+           <div className="absolute top-0 left-0 z-10 hidden w-full h-full opacity-25 lg:block bg-gradient-to-bl from-pink-500"></div>
             <Img className="w-full h-full object-fit" fluid={post.frontmatter.image.childImageSharp.fluid} />
           </div>
 

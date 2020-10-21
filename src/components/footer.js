@@ -18,7 +18,7 @@ const Footer = () => (
         <FFLAG className="mx-auto" />
       </div>
       <div className="mt-8 text-sm opacity-85">
-        Website by <a className="text-gray-700 hover:text-pink-500" href="https://www.zellement.com" rel="noreferrer noopener">Zellement</a>
+        Website by <a className="text-gray-700 hover:text-pink-500" href="https://www.zellement.com" target="_blank" rel="noreferrer noopener">Zellement</a>
       </div>
     </div>
   </div>

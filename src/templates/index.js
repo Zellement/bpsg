@@ -96,7 +96,7 @@ const IndexPage = ({ data }) => {
           </div>
           <div className="relative lg:flex-1">
             <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-bl from-white -z-10"></div>
-            <div class="bg-red-500 w-1/2 h-full absolute top-0 left-0 -z-20">
+            <div className="absolute top-0 left-0 w-1/2 h-full bg-red-500 -z-20">
               <Img
                 className="object-cover w-full h-full"
                 fluid={data.imageTwo.fluid}
@@ -178,14 +178,12 @@ export const IndexQuery = graphql`
         }
       }
     }
-    imageOne: imageSharp(id: { eq: "191e313b-89b4-5f42-bf83-f9121711dccf" }) {
-      id
+    imageOne: imageSharp(fluid: {originalName: {eq: "priscilla-du-preez-9vhpckymsh0-unsplash.jpg"}}) {
       fluid {
         ...GatsbyImageSharpFluid
       }
     }
-    imageTwo: imageSharp(id: { eq: "ec121900-3878-5036-a1a0-9caa4a4ca037" }) {
-      id
+    imageTwo: imageSharp(fluid: {originalName: {eq: "umit-bulut-qbtc7zwjb64-unsplash.jpg"}}) {
       fluid {
         ...GatsbyImageSharpFluid
       }
