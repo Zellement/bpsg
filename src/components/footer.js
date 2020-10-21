@@ -8,7 +8,7 @@ const Footer = () => (
   <div className="px-4 py-8 text-center text-gray-600 border-t border-gray-300">
     <div className="container">
       <p className="flex flex-col justify-center md:flex-row">
-        <Email className="text-xs md:mr-4 hover:text-pink-500 sm:text-base" />
+        <Email className="md:mr-4 hover:text-pink-500" />
         <Telephone className="hover:text-pink-500" />
       </p>
       <p className="mt-4">

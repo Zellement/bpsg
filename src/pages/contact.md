@@ -1,4 +1,5 @@
 ---
+templateKey: contact
 title: <span>Get in touch with us</span> and we'll start your journey together
 image: /img/chad-madden-btfza0m0hce-unsplash.jpg
 ---

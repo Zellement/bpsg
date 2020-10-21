@@ -17,7 +17,7 @@ export default class Contact extends React.Component {
       telephone: ""
     };
     this.validator = new SimpleReactValidator({
-      className: "absolute z-20 top-0 right-0 text-2xl text-white bg-red-800 rounded-full leading-none -mr-1 text-yellow-light p-1 px-2",
+      className: "absolute z-10 top-0 right-0 text-2xl text-white bg-pink-800 w-8 h-8 text-center rounded-full leading-none -mr-1 p-1",
       messages: {
         default: '*'
       }
@@ -71,20 +71,20 @@ export default class Contact extends React.Component {
                 <label className="hidden">Do not fill this in<input name="bot-field" /></label>
             {/* </p> */}
             <div className="flex flex-wrap justify-between">
-              <label className="relative flex w-full p-1">
+              <label className="relative flex w-full py-1">
                 <input className="flex-grow p-4 bg-gray-300 rounded-lg" placeholder="Name" type="text" name="name" onChange={this.handleChange} />
                 {this.validator.message('name', this.state.name, 'required')}
               </label>
-              <label className="relative flex w-full p-1">
+              <label className="relative flex w-full py-1">
                 <input className="flex-grow p-4 bg-gray-300 rounded-lg" placeholder="Email or telephone" type="text" name="email_telephone" onChange={this.handleChange} />
                 {this.validator.message('email_telephone', this.state.email_telephone, 'required')}
               </label>
-              <label className="relative flex w-full p-1">
-                <textarea className="flex-grow p-4 bg-gray-300 rounded-lg" placeholder="Details" type="text" name="details" onChange={this.handleChange} />
+              <label className="relative flex w-full py-1">
+                <textarea className="flex-grow h-40 p-4 bg-gray-300 rounded-lg" placeholder="Details" type="text" name="details" onChange={this.handleChange} />
                {this.validator.message('details', this.state.details, 'required')}
               </label>
-              <span className="w-full p-1">
-                <button className="w-full p-0 rounded-lg btn bg-yellow text-orange-semidark" type="submit"><span className="block p-4 whitespace-no-wrap">Get in touch</span></button>
+              <span className="flex w-full py-1">
+                <button className="p-0 ml-auto text-white transition duration-300 bg-pink-500 rounded-lg hover:bg-pink-800" type="submit"><span className="block p-4 whitespace-no-wrap">Get in touch</span></button>
               </span>
             </div>
         </form>
