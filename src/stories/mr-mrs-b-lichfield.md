@@ -1,6 +1,6 @@
 ---
 templateKey: stories
-name: Mr & Mrs B, Lichfield
+name: Mrs B, Lichfield
 ---
 I have a gay son.
 
