@@ -1,9 +1,10 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import SEO from "../components/seo"
 import { motion } from "framer-motion"
 import { HTMLContent } from "../components/content"
 import Img from "gatsby-image"
+import { BiBookReader } from 'react-icons/bi'
 
 const duration = 0.35
 
@@ -26,6 +27,7 @@ const item = {
 
 const StoriesPage = ({ data }) => {
   const post = data.markdownRemark
+  const storiesPosts = data.allMarkdownRemark
 
   console.log(post)
 
@@ -46,31 +48,6 @@ const StoriesPage = ({ data }) => {
         </motion.div>
 
         <motion.div
-          variants={item}
-          transition="easeInOut"
-          className="container w-full -mt-8 md:flex-row md:flex"
-        >
-          {data.edges.map((projectData, key) => (
-            <Link
-              key={key}
-              to={"/recent-projects/" + projectData.node.slug}
-              className="flex p-1 md:w-1/2 recent-project-listing"
-            >
-              <span className="flex p-8 mb-4 text-white bg-gray-200 border-r-0 border-white border-solid shadow-lg recent-project-listing__number bg-gradient-b-green-green-dark font-display w-14 border-10">
-                <span className="m-auto">{key + 1}</span>
-              </span>
-              <div className="relative flex-grow block mb-4 overflow-hidden bg-gray-200 border-white border-solid shadow-lg border-10">
-                <div className="absolute top-0 bottom-0 left-0 right-0 z-30 flex flex-col items-start justify-center w-full h-full m-auto">
-                  <h2 className="p-2 m-0 text-xl bg-white lg:text-3xl">
-                    {projectData.node.title}
-                  </h2>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </motion.div>
-
-        <motion.div
           className="items-stretch p-4 lg:flex lg:flex-row"
           variants={item}
           transition="easeInOut"
@@ -81,8 +58,25 @@ const StoriesPage = ({ data }) => {
             <Img className="w-full h-full object-fit" fluid={post.frontmatter.image.childImageSharp.fluid} />
           </div>
 
-          <HTMLContent className="z-10 bg-white lg:p-16 lg:shadow-lg content lg:w-7/12 lg:-ml-8 lg:mt-16 lg:mb-16 lg:h-auto" content={post.html} />
+          <div className="z-10 bg-white lg:p-16 lg:shadow-lg content lg:w-7/12 lg:-ml-8 lg:mt-16 lg:mb-16 lg:h-auto">
+          <HTMLContent content={post.html} />
+
+          
+          {storiesPosts.edges.map((storyData, key) => (
+            <Link
+              key={key}
+              to={storyData.node.fields.slug}
+            >
+              <h3 className="mb-4 hover:text-pink-500 transition duration-300">
+                <BiBookReader className="inline mr-1" /> {storyData.node.frontmatter.name}
+              </h3>
+            </Link>
+          ))}
+
+          </div>
+
         </motion.div>
+
       </motion.section>
     </>
   )
@@ -110,8 +104,8 @@ export const StoriesPageQuery = graphql`
         node {
           id
           frontmatter {
-            title
             templateKey
+            name
           }
           fields {
             slug
