@@ -32,6 +32,13 @@ module.exports = {
         name: 'pages',
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `stories`,
+        path: `${__dirname}/src/stories/`,
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,

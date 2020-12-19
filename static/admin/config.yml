@@ -49,7 +49,7 @@ collections:
         label: "Stories"
         name: "stories"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "standard-page" }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "stories-page" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
