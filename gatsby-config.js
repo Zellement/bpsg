@@ -3,7 +3,7 @@ module.exports = {
     title: `Birmingham Parents' Support Group`,
     description: `BPSG was founded in 1997. We are dedicated to helping families of lesbian, gay and bisexual people in coming to terms with knowing that a member of their family is gay.`,
     author: `@Zellement`,
-    email: `bpsg@gmail.com`,
+    email: `bpsg.info@gmail.com`,
     telephone: '(0121) 711 8166',
     address: 'New Door, Oliver Bird Hall, Church Hill Road, Solihull, West Midlands, B91 3RQ',
     siteUrl: `https://www.birminghamparentssupport.com`,
