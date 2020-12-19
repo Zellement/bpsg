@@ -89,5 +89,5 @@ collections:
     identifier_field: name
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "stories"}
-      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Name & Location", name: "name", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
