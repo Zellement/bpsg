@@ -5,7 +5,8 @@ module.exports = {
     author: `@Zellement`,
     email: `bpsg@gmail.com`,
     telephone: '(0121) 711 8166',
-    address: 'New Door, Oliver Bird Hall, Church Hill Road, Solihull, West Midlands, B91 3RQ'
+    address: 'New Door, Oliver Bird Hall, Church Hill Road, Solihull, West Midlands, B91 3RQ',
+    siteUrl: `https://www.birminghamparentssupport.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,6 +33,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `@wardpeet/gatsby-image-nextgen`,
