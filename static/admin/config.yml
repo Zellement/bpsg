@@ -86,9 +86,8 @@ collections:
     label_singular: 'Story'
     folder: "src/stories"
     create: true
-    identifier_field: date
+    identifier_field: name
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "stories"}
       - {label: "Name", name: "name", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", format: "X"}
       - {label: "Body", name: "body", widget: "markdown"}
