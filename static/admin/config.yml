@@ -77,3 +77,18 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
+  - name: "stories"
+    label: "Stories"
+    editor:
+     preview: false
+    description: >
+      This is the section for all the stories.
+    label_singular: 'Story'
+    folder: "src/stories"
+    create: true
+    identifier_field: date
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "stories"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format: "X"}
+      - {label: "Body", name: "body", widget: "markdown"}
