@@ -26,10 +26,9 @@ const item = {
 }
 
 const StoriesPage = ({ data }) => {
+
   const post = data.markdownRemark
   const storiesPosts = data.allMarkdownRemark
-
-  console.log(post)
 
   return (
     <>
@@ -65,7 +64,7 @@ const StoriesPage = ({ data }) => {
           {storiesPosts.edges.map((storyData, key) => (
             <Link
               key={key}
-              to={storyData.node.fields.slug}
+              to={"/stories"+storyData.node.fields.slug}
             >
               <h3 className="mb-4 transition duration-300 hover:text-pink-500">
                 <BiBookReader className="inline mr-1" /> {storyData.node.frontmatter.name}

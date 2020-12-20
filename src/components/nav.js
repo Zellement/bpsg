@@ -35,7 +35,7 @@ const Nav = class extends React.Component {
                 className="flex flex-col justify-center navigation-wrapper__link md:h-full"
                 onClick={this.toggleMenu}
                 activeClassName="is-active"
-                to="/accepting"
+                to="/accepting/"
               >
                 Accepting
               </Link>
@@ -45,7 +45,7 @@ const Nav = class extends React.Component {
                     className=""
                     onClick={this.toggleMenu}
                     activeClassName="is-active"
-                    to="/i-think-my-son-daughter-is-gay"
+                    to="/i-think-my-son-daughter-is-gay/"
                   >
                     I Think My Son / Daughter is Gay
                   </Link>
@@ -55,7 +55,7 @@ const Nav = class extends React.Component {
                     className=""
                     onClick={this.toggleMenu}
                     activeClassName="is-active"
-                    to="/my-son-daugher-has-just-come-out"
+                    to="/my-son-daugher-has-just-come-out/"
                   >
                     My Son / Daughter Has Just Come Out
                   </Link>
@@ -67,7 +67,8 @@ const Nav = class extends React.Component {
                 className="flex flex-col justify-center navigation-wrapper__link md:h-full"
                 onClick={this.toggleMenu}
                 activeClassName="is-active"
-                to="/stories"
+                partiallyActive={true}
+                to="/stories/"
               >
                 Stories
               </Link>
@@ -77,7 +78,7 @@ const Nav = class extends React.Component {
                 className="flex flex-col justify-center navigation-wrapper__link md:h-full"
                 onClick={this.toggleMenu}
                 activeClassName="is-active"
-                to="/meetings"
+                to="/meetings/"
               >
                 Meetings
               </Link>
@@ -87,7 +88,7 @@ const Nav = class extends React.Component {
                 className="flex flex-col justify-center navigation-wrapper__link md:h-full"
                 onClick={this.toggleMenu}
                 activeClassName="is-active"
-                to="/links"
+                to="/links/"
               >
                 Links
               </Link>
@@ -97,7 +98,7 @@ const Nav = class extends React.Component {
                 className="flex flex-col justify-center navigation-wrapper__link md:h-full"
                 onClick={this.toggleMenu}
                 activeClassName="is-active"
-                to="/contact"
+                to="/contact/"
               >
                 Contact
               </Link>
