@@ -48,7 +48,7 @@ const ContactPage = ({ data }) => {
             Birmingham Parents Support Group
           </p>
           <HTMLContent
-            className="text-2xl font-bold leading-tight text-black lowercase font-slab hero-primary lg:text-3xl xl:text-4xl"
+            className="text-2xl font-bold leading-tight text-black lowercase font-slab hero-primary lg:text-3xl xl:text-4xl body-copy"
             content={post.frontmatter.title}
           />
         </motion.div>

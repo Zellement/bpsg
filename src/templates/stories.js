@@ -42,8 +42,8 @@ const SingleStoriesPage = ({ data }) => {
           
           <h1>{post.frontmatter.name}</h1>
 
-          <VscQuote className="absolute top-0 left-0 hidden mb-8 -ml-4 text-4xl text-gray-300 md:-mt-4 lg:block" />
-            <HTMLContent content={post.html} />
+            <VscQuote className="absolute top-0 left-0 hidden mb-8 -ml-4 text-4xl text-gray-300 md:-mt-4 lg:block" />
+            <HTMLContent content={post.html} className="body-copy" />
           </div>
 
         </motion.div>

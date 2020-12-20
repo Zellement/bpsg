@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => {
               Birmingham Parents Support Group
             </p>
             <HTMLContent
-              className="text-2xl font-bold leading-tight text-black lowercase font-slab hero-primary lg:text-3xl"
+              className="text-2xl font-bold leading-tight text-black lowercase font-slab hero-primary lg:text-3xl body-copy"
               content={post.frontmatter.title}
             />
           </div>
@@ -66,7 +66,7 @@ const IndexPage = ({ data }) => {
         >
           <div className="relative lg:flex-1">
             <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-bl from-white -z-10"></div>
-            <div class="bg-red-500 w-1/2 h-full absolute top-0 left-0 -z-20 ">
+            <div className="absolute top-0 left-0 w-1/2 h-full bg-red-500 -z-20 ">
               <Img
                 className="object-cover w-full h-full"
                 fluid={data.imageOne.fluid}

@@ -54,7 +54,7 @@ const StandardPage = ({ data }) => {
             <Img className="w-full h-full object-fit" fluid={post.frontmatter.image.childImageSharp.fluid} />
           </div>
 
-          <HTMLContent className="z-10 bg-white lg:p-16 lg:shadow-lg content lg:w-7/12 lg:-ml-8 lg:mt-16 lg:mb-16 lg:h-auto" content={post.html} />
+          <HTMLContent className="z-10 bg-white lg:p-16 lg:shadow-lg content lg:w-7/12 lg:-ml-8 lg:mt-16 lg:mb-16 lg:h-auto body-copy" content={post.html} />
         </motion.div>
       </motion.section>
     </>

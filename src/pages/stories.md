@@ -1,8 +1,8 @@
 ---
-templateKey: standard-page
+templateKey: stories-page
 title: Read some stories from <span>parents in similar situations</span>
 image: /img/jackie-parker-glmo8apph1o-unsplash.jpg
 ---
 # Stories
 
-Coming soon...
+Below are some stories from our members. We thank them for allowing us to post their experiences on our website.

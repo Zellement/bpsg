@@ -43,7 +43,7 @@ const StoriesPage = ({ data }) => {
         <motion.div className="container p-4" variants={item} transition="easeInOut">
           
           <p className="m-0 text-gray-500 lowercase font-slab">Birmingham Parents Support Group</p>
-          <HTMLContent className="text-2xl font-bold leading-tight text-black lowercase font-slab hero-primary lg:text-3xl xl:text-4xl" content={post.frontmatter.title} />
+          <HTMLContent className="text-2xl font-bold leading-tight text-black lowercase font-slab hero-primary lg:text-3xl xl:text-4xl body-copy" content={post.frontmatter.title} />
 
         </motion.div>
 
@@ -67,7 +67,7 @@ const StoriesPage = ({ data }) => {
               key={key}
               to={storyData.node.fields.slug}
             >
-              <h3 className="mb-4 hover:text-pink-500 transition duration-300">
+              <h3 className="mb-4 transition duration-300 hover:text-pink-500">
                 <BiBookReader className="inline mr-1" /> {storyData.node.frontmatter.name}
               </h3>
             </Link>
