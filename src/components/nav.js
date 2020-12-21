@@ -36,6 +36,7 @@ const Nav = class extends React.Component {
                 onClick={this.toggleMenu}
                 activeClassName="is-active"
                 to="/accepting/"
+                partiallyActive={true}
               >
                 Accepting
               </Link>
@@ -45,7 +46,7 @@ const Nav = class extends React.Component {
                     className=""
                     onClick={this.toggleMenu}
                     activeClassName="is-active"
-                    to="/i-think-my-son-daughter-is-gay/"
+                    to="/accepting/i-think-my-son-daughter-is-gay/"
                   >
                     I Think My Son / Daughter is Gay
                   </Link>
@@ -55,7 +56,7 @@ const Nav = class extends React.Component {
                     className=""
                     onClick={this.toggleMenu}
                     activeClassName="is-active"
-                    to="/my-son-daugher-has-just-come-out/"
+                    to="/accepting/my-son-daugher-has-just-come-out/"
                   >
                     My Son / Daughter Has Just Come Out
                   </Link>

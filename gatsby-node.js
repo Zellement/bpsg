@@ -1,12 +1,19 @@
-const _ = require('lodash')
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const _ = require("lodash")
+const path = require("path")
+const { createFilePath } = require("gatsby-source-filesystem")
+const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
-exports.createPages = async function({ actions, graphql }) {
-    const { data } = await graphql(`
+exports.createPages = async function ({ actions, graphql }) {
+  const { data } = await graphql(`
     query {
-      standardPages: allMarkdownRemark(filter: {frontmatter: {templateKey: {ne: "stories"}}}) {
+      standardPages: allMarkdownRemark(
+        filter: {
+          frontmatter: {
+            templateKey: { ne: "stories" }
+            parentPage: { ne: "accepting" }
+          }
+        }
+      ) {
         edges {
           node {
             id
@@ -19,7 +26,9 @@ exports.createPages = async function({ actions, graphql }) {
           }
         }
       }
-      singleStoryPages: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "stories"}}}) {
+      singleStoryPages: allMarkdownRemark(
+        filter: { frontmatter: { templateKey: { eq: "stories" } } }
+      ) {
         edges {
           node {
             id
@@ -32,50 +41,77 @@ exports.createPages = async function({ actions, graphql }) {
           }
         }
       }
-    } 
+      acceptingPages: allMarkdownRemark(
+        filter: { frontmatter: { parentPage: { eq: "accepting" } } }
+      ) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              templateKey
+            }
+          }
+        }
+      }
+    }
   `)
 
-    data.standardPages.edges.forEach(edge => {
-      const id = edge.node.id
-      actions.createPage({
-        path: edge.node.fields.slug,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-        ),
-        context: {
-          id,
-        },
-      })
+  data.standardPages.edges.forEach((edge) => {
+    const id = edge.node.id
+    actions.createPage({
+      path: edge.node.fields.slug,
+      component: path.resolve(
+        `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+      ),
+      context: {
+        id,
+      },
     })
+  })
 
-    data.singleStoryPages.edges.forEach(edge => {
-      const id = edge.node.id
-      actions.createPage({
-        path: "stories" + edge.node.fields.slug,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-        ),
-        context: {
-          id,
-        },
-      })
+  data.singleStoryPages.edges.forEach((edge) => {
+    const id = edge.node.id
+    actions.createPage({
+      path: "stories" + edge.node.fields.slug,
+      component: path.resolve(
+        `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+      ),
+      context: {
+        id,
+      },
     })
-    // data.allDatoCmsPage.edges.forEach(edge => {
-    //   actions.createPage({
-    //     path: edge.node.slug + '/',
-    //     component: require.resolve(`./src/templates/page.js`),
-    //     context: { slug: edge.node.slug },
-    //   })
-    // })
-    // data.allDatoCmsRecentProject.edges.forEach(edge => {
-    //   actions.createPage({
-    //     path: '/recent-projects/' + edge.node.slug + '/',
-    //     component: require.resolve(`./src/templates/project.js`),
-    //     context: { slug: edge.node.slug },
-    //   })
-    // })
-  }
-  
+  })
+
+  data.acceptingPages.edges.forEach((edge) => {
+    const id = edge.node.id
+    actions.createPage({
+      path: "accepting" + edge.node.fields.slug,
+      component: path.resolve(
+        `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+      ),
+      context: {
+        id,
+      },
+    })
+  })
+  // data.allDatoCmsPage.edges.forEach(edge => {
+  //   actions.createPage({
+  //     path: edge.node.slug + '/',
+  //     component: require.resolve(`./src/templates/page.js`),
+  //     context: { slug: edge.node.slug },
+  //   })
+  // })
+  // data.allDatoCmsRecentProject.edges.forEach(edge => {
+  //   actions.createPage({
+  //     path: '/recent-projects/' + edge.node.slug + '/',
+  //     component: require.resolve(`./src/templates/project.js`),
+  //     context: { slug: edge.node.slug },
+  //   })
+  // })
+}
 
 // exports.createPages = ({ actions, graphql }) => {
 //   const { createPage } = actions
