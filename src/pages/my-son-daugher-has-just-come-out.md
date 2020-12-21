@@ -1,6 +1,7 @@
 ---
 templateKey: standard-page
 title: My <span>son / daughter</span> has just "come out"
+parentPage: "accepting"
 image: /img/priscilla-du-preez-9vhpckymsh0-unsplash.jpg
 ---
 # My Son / Daugher Has Just Come Out
